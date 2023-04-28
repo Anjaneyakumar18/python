@@ -1,0 +1,7 @@
+def factorial(n):
+      values =1
+    for i in range(1,n+1):
+         values =values * i
+       return value
+   number = int(input("type a number:")
+   print(factorial(number))

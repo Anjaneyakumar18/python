@@ -1,0 +1,13 @@
+#With a given integral number n, write a program to generate a dictionarythat contains (i, i x i) such that is an integral number between 1 and n (bothincluded). and then the program should print the dictionary.Suppose thefollowing inputis supplied to the program: 8Then, the output should be:{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+
+
+
+
+n = int(input("Enter a number: "))  # take user input
+
+result = {}  # create an empty dictionary
+
+for i in range(1, n+1):
+    result[i] = i*i  # add key-value pair to dictionary
+
+print(result)  # print the dictionary

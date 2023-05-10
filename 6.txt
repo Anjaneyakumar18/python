@@ -1,0 +1,26 @@
+#Write a program that calculates and prints the value according to the givenformula:Q = Square root of [(2 * C * D)/H]Following are the fixed values of C and H:C is 50. H is 30.D is the variable whose values should be input to your program in a commaseparated sequence.For example Let us assume the following commaseparated input sequence is given to the program:100,150,180The output of the program should be:18,22,24
+
+
+
+
+
+import math
+
+C = 50
+H = 30
+
+# take comma-separated input sequence as a string and split it into a list of individual numbers
+D_list = input("Enter comma-separated values of D: ").split(",")
+
+# create an empty list to store the results
+Q_list = []
+
+# loop through each value of D in the list
+for D in D_list:
+    # calculate Q using the given formula
+    Q = math.sqrt((2 * C * int(D))/H)
+    # append Q to the list of results
+    Q_list.append(round(Q))  # round off the result to the nearest integer
+
+# print the list of results as comma-separated values
+print(",".join(str(x) for x in Q_list))

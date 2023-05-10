@@ -1,0 +1,17 @@
+#. Write a program which accepts a sequence of comma-separated numbersfrom console and generate a list and a tuple which contains everynumber.Suppose the following input is supplied to the program:34,67,55,33,12,98Then, the output should be:['34', '67', '55', '33', '12', '98']('34', '67', '55', '33', '12', '98')
+
+
+
+
+
+
+numbers = input("Enter comma-separated numbers: ")  # take input from user
+
+# split the input string into a list of individual numbers
+num_list = numbers.split(",")
+
+# create a tuple from the list
+num_tuple = tuple(num_list)
+
+print(num_list)  # print the list
+print(num_tuple)  # print the tuple

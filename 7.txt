@@ -1,0 +1,19 @@
+# Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of thearray should be i * j.Note: i=0,1.., X-1; j=0,1,¡Y-1. Suppose the following inputs are given to theprogram: 3,5Then, the output of the program should be:[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+
+
+
+
+
+# take input values of X and Y as comma-separated string and split it into a list of individual numbers
+X, Y = map(int, input("Enter values of X and Y separated by comma: ").split(","))
+
+# create a 2-dimensional list with X rows and Y columns
+array_2d = [[0 for j in range(Y)] for i in range(X)]
+
+# loop through each row and column of the array and calculate the element value using the given formula
+for i in range(X):
+    for j in range(Y):
+        array_2d[i][j] = i * j
+
+# print the 2-dimensional array
+print(array_2d)
